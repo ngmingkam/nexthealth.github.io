@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="NextHealth Responsive Web for immobilities, rehabiliations, recovery, nursing services" />
+  <title>NextHealth | Loyalty </title>
+  <link href="//fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style-starter.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+  <div class="header-w3l">
+  <!--header-->
+  <header id="site-header" class="header-w3l fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg stroke">
+        <a class="navbar-brand" href="index.html">
+         Next<span class="sub-logo">Health</span></span>
+        </a>  
+            <a class="navbar-brand" href="#index.html">    
+        <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+          data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+          </span>
+        </button>
+        <a href="https://api.whatsapp.com/send?phone=93186464&text=Hello, May I have a question about your immobility support services?" class="float-wtsap" target="_blank">
+          <i class="fa fa-whatsapp my-float-wtsap"></i></a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mx-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a> <!-- NEW add "Prodcuts" menu item -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a> <!-- Rename Departments to Services -->
+            </li>            
+            <li class="nav-item active">
+              <a class="nav-link" href="membership.html">Membership</a> <!-- NEW add "Membership" menu item -->
+            </li>   
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="search-bar ml-lg-3 mr-lg-5 mt-lg-0 mt-4">
+              <!--/search-right-->
+              <form class="search position-relative">
+                <input type="text" id="searchBox" value="" onchange="SearchQuery(this.value)" class="search__input" name="searchBox" placeholder="Search here.."
+                  onload="equalWidth()" required="">
+                <a id="searchButton" class="fa fa-search search__icon" href="https://www.google.co.uk/" target="_blank" onclick="buttonClick()"></a>
+              </form>
+              <!--//search-right-->
+            </li>
+          </ul>
+        </div>
+        <!-- toggle switch for light and dark theme -->
+        <div class="mobile-position">
+          <nav class="navigation">
+            <div class="theme-switch-wrapper">
+              <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox">
+                <div class="mode-container">
+                  <i class="gg-sun"></i>
+                  <i class="gg-moon"></i>
+                </div>
+              </label>
+            </div>
+          </nav>
+        </div>
+        <!-- //toggle switch for light and dark theme -->
+      </nav>
+    </div>
+  </header>
+</div>
+  <!-- //header -->
+  <!--/breadcrumb-bg-->
+  <div class="breadcrumb-bg w3l-inner-page-breadcrumb py-5" >
+    <div class="container pt-lg-5 pt-md-3 p-lg-4 pb-md-3 my-lg-3">
+      <h2 class="title pt-5">Welcome back!</h2>
+    </div>
+  </div>
+<!--//breadcrumb-bg-->
+<!-- banner bottom shape -->
+<div class="position-relative" >
+  <div class="shape overflow-hidden">
+    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+    </svg>
+  </div>
+</div>
+<!-- banner bottom shape -->
+
+<!--Version 2 trial code-->
+<section class="py-5 header" >
+  <div class="container py-4" >
+      <div class="row">
+          <div class="col-md-3">
+              <!-- Tabs nav -->
+              <!--start of personal info html code tab-->
+              <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link mb-3 p-3 shadow active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                      <i class="fa fa-user-circle-o mr-2"></i>
+                      <span class="font-weight-bold small text-uppercase">Personal Information</span></a>
+              <!--end of personal info html code tab-->
+              <!--start of product record html code tab-->
+                  <a class="nav-link mb-3 p-3 shadow" id="v-pills-productrecord-tab" data-toggle="pill" href="#v-pills-productrecord" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+              <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+            </svg>&#160;&#160;
+                      <span class="font-weight-bold small text-uppercase">Product Record</span></a>
+              <!--end of product record html tab code-->
+
+              <!--start of Service record html tab code-->
+                  <a class="nav-link mb-3 p-3 shadow" id="v-pills-servicerecord-tab" data-toggle="pill" href="#v-pills-servicerecord" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+
+              <!--Service icon-->     
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                  <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                </svg>&#160;&#160;
+              <!--end of Service icon-->
+                <span class="font-weight-bold small text-uppercase">Service Record</span></a>
+
+              <!--end of Service record html tab code-->
+
+              <!--start of wallet html tab code-->
+                  <a class="nav-link mb-3 p-3 shadow" id="v-pills-wallet-tab" data-toggle="pill" href="#v-pills-wallet" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                      <!--wallet icon-->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wallet-fill" viewBox="0 0 16 16">
+                    <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v2h6a.5.5 0 0 1 .5.5c0 .253.08.644.306.958.207.288.557.542 1.194.542.637 0 .987-.254 1.194-.542.226-.314.306-.705.306-.958a.5.5 0 0 1 .5-.5h6v-2A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                    <path d="M16 6.5h-5.551a2.678 2.678 0 0 1-.443 1.042C9.613 8.088 8.963 8.5 8 8.5c-.963 0-1.613-.412-2.006-.958A2.679 2.679 0 0 1 5.551 6.5H0v6A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6z"/>
+                  </svg>&#160;&#160;
+                  <!--//wallet icon-->
+                      <span class="font-weight-bold small text-uppercase">My e-Wallet</span></a>   
+               <!--end of wallet html tab code-->
+
+ <!--start of wallet html tab code-->
+                  <a class="nav-link mb-3 p-3 shadow" id="v-pills-signnout-tab" data-toggle="pill" href="#v-pills-signout" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+              <!--Sign Out icon-->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                    <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                  </svg>&#160;&#160;
+                  <!--end of Sign Out icon-->
+                    <span class="font-weight-bold small text-uppercase">Sign Out</span></a>
+                      
+               <!--end of wallet html tab code-->
+                  </div>
+          </div>
+          <div class="col-md-9">
+              <!-- Tabs content -->
+              <!--start of personal info html tab content code-->
+              <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade shadow rounded show active p-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                      <h4 class="title-w3l title-subhny mb-4">Personal information</h4>  
+                      <table class="table " style="color:gray">
+                      <thead>
+                      <tr>
+                      <th scope="col">Information type</th>
+                      <th scope="col">Your information</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                      <td>Surname:</td>
+                      <td>Chan</td>
+                      </tr>
+                      <tr>
+                      <td>Given Name:</td>
+                      <td>Tai Man</td>
+                      </tr>
+                      <tr>
+                      <td>Username:</td>
+                      <td>tmchan</td>
+                      </tr>
+                      <tr>
+                      <td>Member ID:</td>
+                      <td>m0001</td>
+                      </tr>
+                      <tr>
+                      <td>Date of Birth</td>
+                      <td>25/11/1950</td>
+                      </tr>
+                      <tr>
+                      <td>Language Preferred:</td>
+                      <td>Cantonese</td>
+                      </tr>
+    
+                      <tr>
+                      <td>Mobile Phone No.:</td>
+                      <td>98765432</td>
+
+                      </tr>
+                      <tr>
+                      <td >Email:</td>
+                      <td >tmchan@email.com</td>
+
+                      </tr>
+                      <tr>
+                      <td >Address:</td>
+                      <td >UG202, UG301, China Chem Golden Plaza, 77 Mody Road, Tsim Sha Tsui East, Kowloon.</td>
+
+                      </tr>
+                      </tbody>
+                      </table>
+                  </div>      
+          <!--end of personal info html tab content code-->
+<!--start of product record html tab content code-->
+<div class="tab-pane fade shadow rounded p-5" id="v-pills-productrecord" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+<h4 class="title-w3l title-subhny mb-4">Product Record</h4>
+                    
+<!--Start of Product toggle bar html code-->
+<div class="container">
+<br>
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#purchaseditem">Purchased Item</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#rentalitem">Rental Item</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div id="purchaseditem" class="container tab-pane active"><br>
+    <h4><b>Purchased Item</b></h4>
+    <br>
+<!--start of Purchased item 1 html code-->
+<div class="card-loyalty mb-3" style="max-width: 540px;">
+<div class="row no-gutters">
+  <div class="col-md-4">
+    <img src="assets/img_product/featherweightcollection_3_1.jpg" class="card-img" alt="...">
+  </div>
+  <div class="col-md-8">
+    <div class="card-body">
+      <h5 >Feather Weight Wheelchair</h5>
+      <p class="card-text">Purchased Date:20/4/2022</p>
+      <p class="card-text">Warranty Expiry Date:19/4/2023</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+  <div id="rentalitem" class="container tab-pane fade"><br>
+    <h4><b>Rental Item</b></h4>
+    <p>Total rental item: 1</p>
+    <br>
+  <!--start of Rental item 1 html code-->
+<div class="card-loyalty mb-3" style="max-width: 700px;">
+<div class="row no-gutters">
+  <div class="col-md-4">
+    <img src="assets/img_product/gochair-citrine-yellow.jpg" class="card-img" alt="...">
+  </div>
+  <div class="col-md-8">
+    <div class="card-body">
+      <h5 >Pride Jazzy 600 ES</h5>
+<!--start of small table of pride jazzy code-->
+<!--product detail of pride jazzy code-->
+      <table class="table " style="color:gray">
+        <thead>
+          <tr>
+            <th scope="col"> </th>
+            <th scope="col">Product Detail</th>
+            <th scope="col"> </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Weight Capacity:</td>
+            <td>300lbs</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Product Weight:</td>
+            <td>50lbs</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Seat Width:</td>
+            <td>18.5"</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Feature 1</td>
+            <td>OMNI-Casters on front and rear to prevent wheel hang-ups</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Feature 2</td>
+            <td>Side-mounted, easily accessible freewheel levers</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Feature 3</td>
+            <td>Suspension for enhanced performance over more vaired terrain</td>
+          </tr>
+        </tbody>
+      </table>
+      <!--//product detail of pride jazzy code-->
+<!--Rental  detail  of Pride jazzy code-->
+<table class="table" style="color:gray;">
+<thead>
+  <tr>
+    <th scope="col"> </th>
+    <th scope="col">Rental Detail</th>
+    <th scope="col"> </th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <th scope="row">1</th>
+    <td>Start Date:</td>
+    <td>1/9/2022</td>
+  </tr>
+  <tr>
+    <th scope="row">2</th>
+    <td>End Date:</td>
+    <td>28/2/2023</td>
+  </tr>
+  <tr>
+    <th scope="row">3</th>
+    <td>Duration:</td>
+    <td>1/2 Year</td>
+  </tr>
+</tbody>
+</table>
+      <!--//product detail of pride jazzy code-->
+      <!--end of small table of pride jazzy code-->
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+</div>
+<!--end of Rental item 1 html code-->  
+  </div>
+</div>
+</div>
+<!--End of product toggle bar html code-->                    
+</div>
+       <!--end of product record html tab content code-->
+         <!--start of  service record html tab content code-->
+                  <div class="tab-pane fade shadow rounded p-5" id="v-pills-servicerecord" role="tabpanel" aria-labelledby="v-pills-servicerecord-tab">
+                      <h4 class="title-w3l title-subhny mb-4">Service Record</h4>
+                  <!--Start of toggle bar of service html code-->
+                  <div class="container">
+                      <h5>Upcoming Appointment: 2</h5>
+                      <br>
+                      <!-- Nav tabs -->
+                      <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" data-toggle="tab" href="#nextappt">Your Next Appointment</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#pastappt">Your Past Appointment</a>
+                        </li>
+                      </ul>
+                      <!-- Tab panes -->
+                      <div class="tab-content">
+                        <div id="nextappt" class="container tab-pane active"><br>
+                          <h4><b>Your Next Appointment</b></h4>
+                          <br>
+                        <!--Start of next appointment service 1detail code-->
+                        <div class="card-loyalty mb-3" style="max-width: 540px;">
+                          <div class="row no-gutters">
+                            <div class="col-md-4">
+                              <img src="assets\images\OTN1.jpg" class="card-img" alt="assets\images\OTN1.jpg" style="margin-top:30px;">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <p class="card-title"><b>Occupational Therapy</b></h5>
+                                <p class="card-text">Next Appointment Date:16/12/2022</p>
+                                <p class="card-text">Next Appointment Time:15:00 pm</p>
+                                <p class="card-text">Arrangement:Home Consultation</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                       <!--end of next appointment service 1 detail code-->
+                       <!--Start of next appointment service 2 detail code-->
+                       <div class="card-loyalty mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="assets\images\acu.jpg" class="card-img" alt="assets\images\acu.jpg" style="margin-top:30px;">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <p class="card-title"><b>Chinese Medical Practitioner</b></h5>
+                              <p class="card-text">Next Appointment Date:30/12/2022</p>
+                              <p class="card-text">Next Appointment Time:10:00 am</p>
+                              <p class="card-text">Arrangement:Home Consultation</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="btn btn-style btn-primary" id="changeappt" href="bookservice.html" role="button">Manage</a>
+                    </div>
+                     <!--end of next appointment service 2 detail code-->
+                        <div id="pastappt" class="container tab-pane fade"><br>
+                          <h4><b>Your Past Appointment</b></h4>
+                          <br>
+<!--start of past appointment service 1 detail card code-->
+<div class="card-loyalty mb-3" style="max-width: 540px;">
+<div class="row no-gutters">
+  <div class="col-md-4">
+    <img src="assets\images\ward.jpg" class="card-img" alt="assets\images\ward.jpg" style="margin-top:30px;">
+  </div>
+  <div class="col-md-8">
+    <div class="card-body">
+      <p class="card-title"><b>Home Modification Consultation</b></h5>
+      <p class="card-text">Last Appointment Date:13/6/2022</p>
+      <p class="card-text">Last Appointment Time:16:00 pm</p>
+      <p class="card-text">Arrangement:Home Consultation</p>
+
+      <p class="card-text"><small class="text-muted">Last updated 24 hours ago</small></p>
+    </div>
+  </div>
+</div>
+</div>
+<!--end of past appointment service 1 detail card code-->
+
+<!--start of past appointment service 1 detail card code-->
+<div class="card-loyalty mb-3" style="max-width: 540px;">
+<div class="row no-gutters">
+  <div class="col-md-4">
+    <img src="assets\images\escort.jpg" class="card-img" alt="assets\images\escort.jpg" style="margin-top:30px;">
+  </div>
+  <div class="col-md-8">
+    <div class="card-body">
+      <p class="card-title"><b>Escort Service</b></h5>
+      <p class="card-text">Last Appointment Date:12/8/2022</p>
+      <p class="card-text">Last Appointment Time:09:00 am</p>
+      <p class="card-text">Arrangement:Home to Hospital</p>
+      <p class="card-text"><small class="text-muted">Last updated 24 hours ago</small></p>
+    </div>
+  </div>
+</div>
+</div>
+          <!--end of past appointment service 1 detail card code-->              
+</div>                     
+</div>
+</div>
+        <!--end of toggle bar of service html code-->
+</div>
+         <!--end of service record html tab content code-->
+         <!--start of  wallet html tab content code-->
+                  <div class="tab-pane fade shadow rounded p-5" id="v-pills-wallet" role="tabpanel" aria-labelledby="v-pills-wallet-tab">
+                      <h4 class="title-w3l title-subhny mb-4">My e-Wallet</h4>
+                      <img src="assets/images/creditcard.png" style="border-radius:10px;">
+                      <br><br>
+                  <div class="container">
+  <div class="row" style=" font-family:'Hind Siliguri', sans-serif;">
+    <div class="col" >Credit Card Number</div>
+    <div class="col">**** **** **** 5432</div>
+    <div class="w-100"></div>
+    <div class="col">Bank of Credit Card</div>
+    <div class="col">ERB Bank</div>
+       <div class="w-100"></div>
+   <div class="col">Type of Credit Card</div>
+    <div class="col">Visa</div>
+  </div>
+  <br>
+  <a class="btn btn-style btn-primary" id="wallet-manage" href="#" role="button" onclick="alert('You will receive an OTP code for proceeding next step soon!')">Manage</a>
+</div>
+</div>  
+<!--end of wallet html tab content code-->
+   
+<!--start of  sign out html tab content code-->
+
+<div class="tab-pane fade shadow rounded p-5" id="v-pills-signout" role="tabpanel" aria-labelledby="v-pills-wallet-tab">
+<h4 class="title-w3l title-subhny mb-4">Sign Out</h4>
+<p>Please click button below for confirming to quit?</p>
+<br>
+<a class= "btn btn-style btn-primary" role="button" href="./membership.html"><b>Confirm to Sign Out</b></a>
+</div>              
+  <!--end of sign out html tab content code-->
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--end of version 2 trial code-->
+    <div class="page-content">
+      <main class="container-fluid">
+        <div class="row">
+          <article class="col-sm-12 sectionSpacing ml-5 p-4">
+          </article>
+        </div>
+      </main>
+      <!-- END .container-fluid -->
+    </div>
+    <!-- END .page-content -->
+  </div>
+  <!-- END whole page wrapper -->
+  <!-- banner bottom shape -->
+
+  <!-- footer -->
+  <section class="w3l-footer-29-main" >
+    <div class="footer-29 py-5">
+      <div class="container py-lg-4">
+        <div class="row footer-top-29">
+          <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-1 pr-lg-5">
+            <div class="footer-logo mb-3">
+              <a class="navbar-brand" href="index.html">NextHealth</a>
+            </div>
+            <p><strong>Dedicated to Discovery, Committed to Care & Confidence for the good life.</strong></p>
+            <ul class="mt-3">
+              <li><a href="tel:(852) 3442 6359"><span class="fa fa-phone"></span>(852) 3442 6359</a></li>
+              <li><a href="mailto:nexthealth@mail.com?subject=Enquiry for NextHealth Products and Services" class="mail"><span class="fa fa-envelope-open-o"></span>
+                  nexthealth@mail.com</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-2 mt-sm-0 mt-5">
+            <ul>
+             <h6 class="footer-title-29">History</h6>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#blog.html"> Blog Posts</a></li>
+              <li><a href="services.html">Departments</a></li>
+              <li><a href="#careers"> Careers</a></li>
+              <li><a href="about.html">Team</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-3 mt-lg-0 mt-5">
+            <h6 class="footer-title-29">Useful Links</h6>
+            <ul>
+              <li><a href="#terms">Terms of service</a></li>
+              <li><a href="#privacy"> Privacy policy</a></li>
+              <li><a href="#doc"> Documentation</a></li>
+              <li><a href="#support"> Support</a></li>
+              <li><a href="#components"> Components</a></li>
+              <li><a href="#changelog"> Changelog</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-4 mt-lg-0 mt-5">
+            <h6 class="footer-title-29">Subscribe to our Newsletter </h6>
+            <p>Enter your email and receive the latest news, updates and special offers from us.</p>
+            <form id="subscribeForm" action="#" class="subscribe" onsubmit="return ajaxpostsubscribe()"> 
+              <input type="email" name="email" placeholder="Your Email Address" required="">
+              <button type="submit" class="btn btn-style btn-white w-100 mt-4">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //footer -->
+
+  <!-- copyright -->
+  <section class="w3l-copyright">
+    <div class="container">
+      <div class="row bottom-copies">
+        <span class="col-lg-8 copy-footer-29">© 2022 NextHealth. All rights reserved. Design by <p
+          class="popup" onclick="myFunction()"><b>PE075DS-4_Group 2</b><a class="popuptext" id="myPopup">Group Member:
+            Student #13,
+            Student #18,
+            Student #21,
+            Student #23.
+            </a></p></span>
+        <div class="col-lg-4 main-social-footer-29">
+          <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+          <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+          <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+          <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+      &#10548;
+    </button>
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- /move top -->
+  </section>
+  <!-- //copyright -->
+  <!--//footer-->
+  <!-- Template JavaScript -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/theme-change.js"></script>
+  <!-- owl carousel -->
+  <script src="assets/js/owl.carousel.js"></script>
+  <!-- script for tesimonials carousel slider -->
+  <script>
+    $(document).ready(function () {
+      $("#owl-demo2").owlCarousel({
+        loop: true,
+        nav: false,
+        margin: 50,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          736: {
+            items: 1,
+            nav: false
+          },
+          991: {
+            items: 2,
+            margin: 30,
+            nav: false
+          },
+          1080: {
+            items: 3,
+            nav: false
+          }
+        }
+      })
+    })
+  </script>
+  <!-- //script for tesimonials carousel slider -->
+  <!-- stats number counter-->
+  <script src="assets/js/jquery.waypoints.min.js"></script>
+  <script src="assets/js/jquery.countup.js"></script>
+  <script>
+    $('.counter').countUp();
+  </script>
+  <!-- //stats number counter -->
+  <!-- disable body scroll which navbar is in active -->
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+  <!-- disable body scroll which navbar is in active -->
+
+  <!--/MENU-JS-->
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 80) {
+        $("#site-header").addClass("nav-fixed");
+      } else {
+        $("#site-header").removeClass("nav-fixed");
+      }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+      $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+      $(window).on("resize", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+      });
+    });
+  </script>
+  <!--//MENU-JS-->
+
+    <!-- Form Controls JS - Start -->
+<script>
+  function ajaxpostsubscribe () {
+//  (A) GET FORM DATA
+  let subform = document.getElementById("subscribeForm");
+  let subscribedata = new FormData(subform);
+
+// (B) AJAX REQUEST
+// (B1) POST DATA TO SERVER, RETURN RESPONSE AS TEXT
+  fetch("./index.html", { method:"POST", body:subscribedata })
+  .then(res=>res.text())
+
+// (B2) SHOW MESSAGE ON SERVER RESPONSE
+  .then((response) => {
+  console.log(response);
+  if (response == "OK") { alert("SUCCESSFUL!"); }
+  else { alert("Thank you for subscribing NextHealth newsletter!"); }
+  subform.reset();
+  })
+
+// (B3) OPTIONAL - HANDLE FETCH ERROR
+  .catch((err) => { console.error(err); });
+
+// (C) PREVENT FORM SUBMIT
+  return false;
+  }
+</script>
+
+  <!-- Form Controls JS - End -->
+  <!-- When the user clicks on div, open the popup -->
+<script>
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script>
+
+  <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

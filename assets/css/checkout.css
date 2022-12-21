@@ -1,0 +1,18 @@
+.logo {
+   color: lightgreen; 
+}
+
+.sub-logo {
+    color: #2caee2;
+}
+
+.thumbnail {
+    width: 120px;
+    height: 120px;
+    border-radius: 3px;
+}
+
+.img-payment {
+    width: 90px;
+    height: 60px;
+}

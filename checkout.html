@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/checkout.css">
+
+    <title>checkout</title>
+
+  </head>
+<body>
+  <!-- navbar -->    
+  <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark text-white">
+    <a class="navbar-brand" href="index.html"><span class="logo"><b>Next</b></span><span class="sub-logo"><b>Health</b></span></a><span class="float-center"><b>Welcome to our Online Shop</b></span>
+  </nav>
+  <form id="form-checkout" action="./products.html" method="get">
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-9">
+      <table class="table table-striped table-hover table-secondary mx-0">
+        <thead class="bg-light text-success">
+          <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Model</th>
+            <th scope="col">Price(HK$)</th>
+            <th scope="col">Discount</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Subtotal(HK$)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="row1">
+            <th scope="row"><img src="assets/img_product/gochair-citrine-yellow.jpg" class="thumbnail float-left" alt="..."></th>
+            <th>Pride Jazzy 600ES</th>
+            <td name="price">$5500.00</td>
+            <td name="discount">0</td>
+            <td>
+              <div class="input-group mb-3">          
+                <select class="custom-select" type="button" onchange="calBalance('row1')">
+                  <option selected>0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+            </td>
+            <td name="subtotal">$0.00</td>
+          </tr>
+          <tr id="row2">
+            <th scope="row"><img src="assets/img_product/gp620-compasshd-turn-2-768x768.jpg" class="thumbnail float-left" alt="..."></th>
+            <th>Golden Compass 750ES</th>
+            <td name="price">$3500.00</td>
+            <td name="discount">0</td>
+            <td>
+              <div class="input-group mb-3">          
+                <select class="custom-select" type="button" onchange="calBalance('row2')">
+                  <option value="0" selected>0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+            </td>
+            <td name="subtotal">$0.00</td>
+          </tr>
+          <tr  id="row3">
+            <th scope="row"><img src="assets/img_product/victory-10-3-wheel-candy-apple-red.jpg" class="thumbnail float-left" alt="..."></th>
+            <th>Pride Victory 510WS</th>
+            <td name="price">$3500.00</td>
+            <td name="discount">0</td>
+            <td>
+              <div class="input-group mb-3">          
+                <select class="custom-select" type="button" onchange="calBalance('row3')">
+                  <option value="0" selected>0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+            </td>
+            <td name="subtotal">$0.00</td>
+          </tr>
+          <tr id="row4">
+            <th scope="row"><img src="assets/img_product/maxima-ocean-blue-3w-beauty-1000x1000px.png" class="thumbnail float-left" alt="..."></th>
+            <th>Maxima Ultra 650WS</th>
+            <td name="price">$4500.00</td>
+            <td name="discount">0</td>
+            <td>
+              <div class="input-group mb-3">          
+                <select class="custom-select" type="button" onchange="calBalance('row4')">
+                  <option value="0" selected>0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+            </td>
+            <td name="subtotal">$0.00</td>
+          </tr>
+          <tr id="row5">
+            <th scope="row"><img src="assets/img_product/featherweightcollection_3_1.jpg" class="thumbnail float-left" alt="..."></th>
+            <th>Feather 135LW</th>
+            <td name="price">$3500.00</td>
+            <td name="discount">0</td>
+            <td>
+              <div class="input-group mb-3">          
+                <select class="custom-select" type="button" onchange="calBalance('row5')">
+                  <option value="0" selected>0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+            </td>
+            <td name="subtotal">$0.00</td>
+          </tr>
+          <tr id="row6">
+            <th scope="row"><img src="assets/img_product/karman--ergo-s-115-lightweight.jpg" class="thumbnail float-left" alt="..."></th>
+            <th>Karman 115LW</th>
+            <td name="price">$3900.00</td>
+            <td name="discount">0</td>
+            <td>
+              <div class="input-group mb-3">          
+                <select class="custom-select" type="button" onchange="calBalance('row6')">
+                  <option value="0" selected>0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+            </td>
+            <td name="subtotal">$0.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="col-lg-3 bg-info text-dark my-3 mx-0 py-4 pr-4">            
+      <h5 class="text-white">Checkout Summary</h5>
+      <h5>Products<span class="d-inline-flex float-right" id="ptotal">$0.00</span></h5>
+      <h5>Delivery Fee<span class="d-inline-flex float-right" id="dfee">$0.00</span></h5>
+      <hr>
+      <h4>Total<span class="d-inline-flex float-right" id="total">$0.00</span></h4>
+
+    <div><br></div>
+    
+      <h5 class="text-white">Delivery Details</h5>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="delivery" id="selfpickup" value="0" checked>
+        <label class="form-check-label" for="selfpickup">
+          <h5>Self-pickup</h5>
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="delivery" id="delivery" value="300">
+        <label class="form-check-label" for="delivery">
+          <h5>Delivery</h5>
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress"></label>
+        <input type="text" class="form-control" id="inputAddress" name="inputAddress" placeholder="Unit, floor, and estate" value="">
+      </div>
+      <div class="form-group">
+        <label for="inputAddress1"></label>
+        <input type="text" class="form-control" id="inputAddress1" name="inputAddress1" placeholder="Street no., street" value="">
+      </div>
+      <div class="form-group">
+        <label for="inputAddress2"></label>
+        <input type="text" class="form-control" id="inputAddress2" name="inputAddress2" placeholder="District" value="">
+      </div>
+
+    <div><br></div>
+   
+      <h5 class="text-white">Payment Options</h5>
+      <div class="form-check bg-light px-4 py-2">
+        <input class="form-check-input" type="radio" name="payment" id="shoppay" value="option1" checked>
+        <label class="form-check-label" for="shoppay">
+          <img class="img-payment" src="./assets/images/ShopPay.jpg" alt="ShopPay">
+        </label>
+      </div>
+      <div class="form-check bg-light px-4 py-2">
+        <input class="form-check-input" type="radio" name="payment" id="paypal" value="option2">
+        <label class="form-check-label" for="paypal">
+          <img class="img-payment" src="./assets/images/PayPal.jfif" alt="PayPal">
+        </label>
+      </div>
+      <div class="form-check bg-light px-4 py-2">
+        <input class="form-check-input" type="radio" name="payment" id="applepay" value="option3">
+        <label class="form-check-label" for="applepay">
+          <img class="img-payment" src="./assets/images/ApplePay.jfif" alt="ApplePay">
+        </label>
+      </div>
+      <div class="ml-2 my-4">
+        <button id="btn-checkout" class="btn btn-light bg-primary text-white float-right" type="submit">Checkout</button>
+      </div>
+    </div>    
+</div>
+</div>
+</form>
+  
+    
+
+    
+    <script>
+      const NONMEMBER = "0000";
+      const MEMBER = "m0001";
+      const DEFAULT_DISCOUNT = "0";
+      const MEMBER_DISCOUNT = "-10%";
+      let stock = [99,99,0,1,2,3];
+      let dfee = 0;
+      let discount = 1;
+      let shopperId = MEMBER;
+      let price = document.querySelectorAll("[name='price']");
+      let discountDisp = document.querySelectorAll("[name='discount']");
+      let subtotals = document.getElementsByName('subtotal');
+      let ptotal = document.getElementById("ptotal");
+      let total = document.getElementById("total");
+
+
+
+      if (shopperId.charAt(0) == "m") {
+          discount = 0.9;          
+          for (i=0; i<stock.length; i++) {
+            discountDisp[i].innerText = MEMBER_DISCOUNT;
+          }
+        } else {
+          for (i=0; i<stock.length; i++) {
+            discountDisp[i].innerText = DEFAULT_DISCOUNT;
+          }
+        }
+
+      let delivery = document.querySelector("#delivery");  
+      delivery.addEventListener("click", (event) => { 
+          if (delivery.checked) {dfee = 300;} 
+          else {dfee = 0;}
+          document.getElementById("dfee").innerText = `$${dfee.toFixed(2)}`;
+          let sum = Number(dfee) + Number(ptotal.innerText.slice(1));
+          total.innerText = `$${sum.toFixed(2)}`;
+      })
+      let selfpickup = document.querySelector("#selfpickup");  
+      selfpickup.addEventListener("click", (event) => { 
+          if (selfpickup.checked) {dfee = 0;} 
+          else {dfee = 300;}
+          document.getElementById("dfee").innerText = `$${dfee.toFixed(2)}`;
+          let sum = Number(dfee) + Number(ptotal.innerText.slice(1));
+          total.innerText = `$${sum.toFixed(2)}`; 
+      })     
+
+      const calBalance = (itemId) => {
+        let subtotal = document.getElementById(itemId).lastElementChild;
+        let selectqty = subtotal.previousElementSibling.firstElementChild.firstElementChild.value;
+        let i = itemId.charAt(3);
+
+        if (stock[i-1]<selectqty) {
+          subtotal.previousElementSibling.firstElementChild.firstElementChild.value = 0;
+          if (stock[i-1] == 0) {
+            window.alert("Out of stock!");
+          } else {
+            window.alert(`Sorry, this item only has ${stock[i-1]} in stock!`);
+          }
+        } else {
+            let unitprice = price[i-1].innerText.slice(1);   
+            let stotal = unitprice*selectqty*discount;
+            subtotal.innerText = `$${stotal.toFixed(2)}`;
+
+            let sum = 0;
+            for (i=0;i<subtotals.length;i++) {
+              stotal = Number(subtotals[i].innerText.slice(1));
+              sum += stotal;     
+            }
+            ptotal.innerText = `$${sum.toFixed(2)}`;
+
+            document.getElementById("dfee").innerText = `$${dfee.toFixed(2)}`;
+
+            sum += Number(dfee);
+            total.innerText = `$${sum.toFixed(2)}`;
+          }
+      }
+      
+      const updateStock= () => {
+        let itemId = '';
+        let selectqty = 0;
+        for (i=0; i<stock.length; i++)  {
+          itemId = `row${i+1}`;
+          selectqty = document.getElementById(itemId).lastElementChild.previousElementSibling.firstElementChild.firstElementChild.value;
+          stock[i] -= selectqty;
+        }   console.log(stock);
+      }
+
+      let checkoutform = document.getElementById("form-checkout");      
+      let textinput = document.getElementById("inputAddress");
+      let textinput1 = document.getElementById("inputAddress1");
+      let textinput2 = document.getElementById("inputAddress2");        
+      let deliveryaddress = textinput.value +' '+ textinput1.value +' '+ textinput2.value;    console.log(deliveryaddress);
+      checkoutform.addEventListener("submit", (event) => { 
+        if (ptotal.innerText === '$0.00') {   
+          window.alert('Select all your desired item(s) and fill out the checkout details before pressing the checkout button!');
+          event.preventDefault();
+        } else if ((delivery.checked)&& ((textinput.value =="")||(textinput1.value =="")||(textinput2.value ==""))) {   
+          window.alert('Please fill in complete delivery address before pressing the checkout button!');
+          event.preventDefault();
+        } else {
+          window.alert('Payment successful! Delivery details will be confirmed by phone within 2 working days. Thank you for shopping at NextHealth!');
+          updateStock();
+          checkoutform.submit();
+        }
+      });
+    </script>
+    
+</body>
+</html>
